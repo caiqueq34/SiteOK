@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>CARDAPIO</title>
+    <link rel="stylesheet" href="cardapio.css" />
+</head>
+<body>
+
+    <!-- modelos de lanche na lista e no carrinho -->
+    <div class="models">
+
+        <!-- lanche na lista -->
+        <div class="lanche-item">
+            <a href="">
+                <div class="lanche-item--img"><img src="" /></div>
+                <div class="lanche-item--add">+</div>
+            </a>
+            <div class="lanche-item--price">R$ --</div>
+            <div class="lanche-item--name">--</div>
+            <div class="lanche-item--desc">--</div>
+        </div>
+
+        <!-- lanche no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <img src="img/elvisBurguerPretoHorizontalSemSlogan-removebg-preview.png" alt="" id="logoNav">
+        <p class="separacaoPalavras">|</p>
+        <a href="../../index.html" class="btnNav">Início</a>
+        <p class="separacaoPalavras">|</p>
+        <a href="../SobreNos/sobreNos.html" class="btnNav">Sobre nós</a>
+        <p class="separacaoPalavras">|</p>
+        <a href="../localizacao/localizacao.html" class="btnNav">Localização</a> 
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>CARDÁPIO</h2>
+
+        <div class="lanche-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Seu Pedido</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .lancheWindowArea -->
+    <div class="lancheWindowArea">
+        <div class="lancheWindowBody">
+            <div class="lancheInfo--cancelMobileButton">Voltar</div>
+            <div class="lancheBig">
+                <img src="" />
+            </div>
+            <div class="lancheInfo">
+                <h1>--</h1>
+                <div class="lancheInfo--desc">--</div>
+                <div class="lancheInfo--sizearea">
+                    <div class="lancheInfo--sector">Tamanho</div>
+                    <div class="lancheInfo--sizes">
+                        <div data-key="P" class="lancheInfo--size">PEQUENO <span>--</span></div>
+                        <div data-key="M" class="lancheInfo--size">MÉDIO <span>--</span></div>
+                        <div data-key="G" class="lancheInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="lancheInfo--pricearea">
+                    <div class="lancheInfo--sector">Preço</div>
+                    <div class="lancheInfo--price">
+                        <div class="lancheInfo--actualPrice">R$ --</div>
+                        <div class="lancheInfo--qtarea">
+                            <button class="lancheInfo--qtmenos">-</button>
+                            <div class="lancheInfo--qt">1</div>
+                            <button class="lancheInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lancheInfo--addButton">Adicionar ao carrinho</div>
+                <div class="lancheInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .lancheWindowArea -->
+    <hr class="linhaSeparacao">
+   
+
+    <script src="cardapio.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
